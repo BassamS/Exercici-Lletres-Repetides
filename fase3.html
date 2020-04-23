@@ -14,25 +14,14 @@
 
     function countLetters() {
 
-      let tempArr = ['s', 's', 'a', 'm', ' ', 's', 'a', 'e', 'd', 'y'];
-      let letters = [];
-      let count = 1;
-      let i;
-      let value;
-
-      for (i = 0; i < tempArr.length; i++) {
-        if (tempArr[i] === tempArr[i + 1]) {
-          count++
-        } else {
-          value = `${count} ${tempArr[i]}`;
-          letters = [...letters, value];
-          count = 1;
-        }
-      }
-      return letters;
+      var letras = new Map()
+      var palabra = ['s', 's', 'a', 'm', ' ', 's', 'a', 'e', 'd', 'y']
+      palabra.forEach(letter => {
+        console.log(letter);
+      });
     }
 
-    console.log(countLetters());
+    countLetters();
 
   </script>
 </body>
